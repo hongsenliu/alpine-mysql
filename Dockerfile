@@ -1,8 +1,7 @@
-FROM alpine:latest
-MAINTAINER WangXian <xian366@126.com>
+FROM alpine:latest 
 
-WORKDIR /app
-VOLUME /app
+WORKDIR /db
+VOLUME /db
 COPY startup.sh /startup.sh
 
 RUN apk add --update mysql mysql-client && rm -f /var/cache/apk/*
